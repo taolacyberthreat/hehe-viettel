@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mua SIM - Viettel Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 24px;
+      margin-right: 8px;
+    }
+    .btn-login {
+      background: #e60000;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 16px;
+      border: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 32px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+    .steps {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .step {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #e60000;
+      color: #e60000;
+      font-weight: bold;
+      margin: 0 8px;
+    }
+    .search {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .search input, .search button {
+      padding: 8px;
+      font-size: 14px;
+    }
+    .search input {
+      flex: 1;
+      margin-right: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: #eee;
+    }
+    .price {
+      color: #e60000;
+      font-weight: bold;
+    }
+    .select-btn {
+      border: 2px solid #e60000;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://vietteltelecom.vn/assets/images/logo.svg" alt="viettel logo">
+      <strong>Viettel Telecom</strong>
+    </div>
+    <button class="btn-login">Đăng nhập</button>
+  </header>
+
+  <main>
+    <h1>MUA SIM</h1>
+
+    <div class="steps">
+      <div class="step">1</div>
+      <div class="step" style="border-color:#ccc; color:#ccc">2</div>
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Tìm kiếm">
+      <button>Tìm kiếm</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Stt</th>
+          <th>Sim số</th>
+          <th>Giá sim</th>
+          <th>Thời gian sử dụng</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>0349 845 966</td>
+          <td class="price">60.000đ</td>
+          <td>12 tháng</td>
+          <td><div class="select-btn"></div></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>0362 106 784</td>
+          <td class="price">60.000đ</td>
+          <td>12 tháng</td>
+          <td><div class="select-btn"></div></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>0342 250 639</td>
+          <td class="price">60.000đ</td>
+          <td>12 tháng</td>
+          <td><div class="select-btn"></div></td>
+        </tr>
+        <!-- Thêm dòng nếu muốn -->
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
